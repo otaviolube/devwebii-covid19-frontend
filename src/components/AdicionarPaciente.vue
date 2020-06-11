@@ -66,7 +66,7 @@
                 PacienteWS.criarPaciente(dadosPaciente)
                     .then(response => {
                         this.paciente.id = response.data.id;
-                        console.log(this.paciente);
+                        console.log(this.paciente.id);
                     }).catch(error => {
                         console.log(error.message);
                     })
